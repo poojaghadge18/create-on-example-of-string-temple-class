@@ -1,0 +1,21 @@
+str="hi {0},send a mail to {1}"
+print(str.format('pooja','pjghadge07@gmail.com'))
+
+name='pooja'
+mailid='pjghadge07@gmail.com'
+str1=f"hi {name},send a mail to{mailid}"
+print(str1)
+
+str2="hi "+name+",send a mail to "+mailid
+print(str2)
+
+mstr=f""""
+hi {name},send
+a mail to {mailid}"""
+
+print(mstr)
+
+from string import Template
+tstr=Template("hi $name1,send a mail to $mailid1")
+print(tstr.substitute(name1=name,mailid1=mailid))
+str1=f"hi{name},send a mail to{mailid}"
