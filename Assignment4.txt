@@ -19,3 +19,11 @@ from string import Template
 tstr=Template("hi $name1,send a mail to $mailid1")
 print(tstr.substitute(name1=name,mailid1=mailid))
 str1=f"hi{name},send a mail to{mailid}"
+
+out put-> hi pooja,send a mail to pjghadge07@gmail.com
+hi pooja,send a mail topjghadge07@gmail.com
+hi pooja,send a mail to pjghadge07@gmail.com
+"
+hi pooja,send
+a mail to pjghadge07@gmail.com
+hi pooja,send a mail to pjghadge07@gmail.com
